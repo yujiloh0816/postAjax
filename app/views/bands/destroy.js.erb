@@ -1,0 +1,9 @@
+// closest() 開始要素から最も近い親要素を選択します。
+// fadeOut() 各要素の透明度を操作して、表示されている要素をフェードアウトさせます。
+// bind() 要素に任意のイベントで実行させたい関数を紐づけます。
+// e.f. $('#foo').bind('click', function() {...} #fooがclickされるとfunctionを発動！
+// clickはJqueryで定義されている。
+// ajax:successは remote: trueで検知している。
+$('.delete').bind('ajax:success',function() {
+	$(this).closest('tr').fadeOut();
+});

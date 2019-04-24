@@ -1,0 +1,8 @@
+// parant() 指定した要素の「親」要素でセレクタにマッチする要素を選択します。
+// html() 引数を設定した場合は、jQueryオブジェクトで指定した要素にhtmlコンテンツを設定します
+// $('#new-band a').parent().html("<%= j render 'form', band: @band %>")
+//
+// append(contents) 指定した要素内（子要素）の最後に、引数で指定したコンテンツを追加
+// html => append
+// hide() jQueryオブジェクトで指定した要素を隠します 
+$('#new-band a').hide().parent().append("<%= j render 'form', band: @band %>")
